@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LINN Smart Irrigation Dashboard</title>
+
+<title>LINN Agro Smart Irrigation</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,23 +16,31 @@
 <body>
 
 <div class="sidebar">
-    <h2>🌱 LINN</h2>
 
-    <ul>
-        <li>🏠 Dashboard</li>
-        <li>🚜 Farms</li>
-        <li>📟 Devices</li>
-        <li>💧 Irrigation</li>
-        <li>📊 Reports</li>
-        <li>⚙ Settings</li>
-    </ul>
+<h2>🌱 LINN Agro</h2>
+
+<ul>
+<li>🏠 Dashboard</li>
+<li>🚜 Farms</li>
+<li>📟 Devices</li>
+<li>💧 Irrigation</li>
+<li>📊 Reports</li>
+<li>⚙ Settings</li>
+</ul>
+
 </div>
 
 <div class="main">
 
 <header>
-    <h1>Smart Irrigation Dashboard</h1>
-    <p>Demo Farm - Bangalore</p>
+
+<h1>🌱 LINN Agro Smart Irrigation</h1>
+
+<p>
+Cloud Based Irrigation Monitoring &
+Automation Platform
+</p>
+
 </header>
 
 <div class="cards">
@@ -51,8 +61,28 @@
 </div>
 
 <div class="card">
-<h3>🚰 Pump</h3>
+<h3>🚰 Pump Status</h3>
 <h2 class="green">ON</h2>
+</div>
+
+<div class="card">
+<h3>🚜 Farm</h3>
+<h2>Demo Farm</h2>
+</div>
+
+<div class="card">
+<h3>💦 Water Used Today</h3>
+<h2>120 L</h2>
+</div>
+
+<div class="card">
+<h3>⏰ Last Irrigation</h3>
+<h2>15:30</h2>
+</div>
+
+<div class="card">
+<h3>📡 Devices Online</h3>
+<h2>3 / 3</h2>
 </div>
 
 </div>
@@ -70,25 +100,84 @@
 </div>
 
 <div class="panel">
+
 <h3>Water Tank Level</h3>
 
 <div class="tank">
 <div class="water"></div>
 </div>
 
-<h2>78%</h2>
+<h2 class="center">78%</h2>
 
 </div>
 
 <div class="panel">
+
 <h3>Alerts</h3>
 
 <ul class="alerts">
+
 <li>✅ System Healthy</li>
 <li>✅ Pump Running Normally</li>
 <li>⚠ Soil Moisture Low Yesterday</li>
 <li>✅ AWS IoT Connected</li>
+
 </ul>
+
+</div>
+
+<div class="panel">
+
+<h3>Device Health</h3>
+
+<table class="health-table">
+
+<tr>
+<td>ESP32 Controller</td>
+<td class="online">🟢 Online</td>
+</tr>
+
+<tr>
+<td>Moisture Sensor</td>
+<td class="online">🟢 Online</td>
+</tr>
+
+<tr>
+<td>Tank Level Sensor</td>
+<td class="online">🟢 Online</td>
+</tr>
+
+<tr>
+<td>Pump Relay</td>
+<td class="online">🟢 Online</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="panel">
+
+<h3>Pump Control</h3>
+
+<p>Current Status</p>
+
+<h2 class="green center">ON</h2>
+
+<button class="pump-btn">
+Turn OFF
+</button>
+
+</div>
+
+<div class="panel">
+
+<h3>Farm Information</h3>
+
+<p><b>Farm Name:</b> Demo Farm</p>
+<p><b>Owner:</b> LINN Agro</p>
+<p><b>Location:</b> Bangalore, Karnataka</p>
+<p><b>Area:</b> 2 Acres</p>
 
 </div>
 
